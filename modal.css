@@ -543,3 +543,7 @@ footer {
   }
 }
 
+/* mise en forme modal */
+.error{
+  border: solid #279e7a 0.19rem;
+}
