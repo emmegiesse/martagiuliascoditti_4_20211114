@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-default: "DM Sans", Arial, Helvetica, sans-serif;
   --font-slab: var(--font-default);
@@ -12,7 +13,7 @@
 
 /* Landing Page */
 body {
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   /*background-image: url("background.png");*/
@@ -106,8 +107,6 @@ img {
   }
 }
 
-
-
  @media screen and (max-width: 540px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -127,8 +126,6 @@ main {
   margin: 1px 20px 15px;
   border-radius: 2rem;
   text-align: justify;
-
-
 }
 
 .modal-btn {
@@ -173,7 +170,7 @@ main {
   font-size: 16px;
 }
 
-.bground {
+.bground, .confirmation-submit {
   display: none;
   position: fixed;
   z-index: 1;
@@ -185,7 +182,7 @@ main {
   background-color: rgba(26, 39, 156, 0.4);
 }
 
-.content {
+.content, .submitted-form {
   margin: 5% auto;
   width: 100%;
   max-width: 500px;
@@ -312,7 +309,7 @@ input[data-error]::after {
   left: 21%;
   top: 19%;
 }
-.close {
+.close, .close-modal-submit {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -322,8 +319,8 @@ input[data-error]::after {
   cursor: pointer;
   transform: scale(0.7);
 }
-.close:before,
-.close:after {
+.close:before,.close:after
+.close-modal-submit:before,.close-modal-submit:after {
   position: absolute;
   left: 15px;
   content: " ";
@@ -331,10 +328,10 @@ input[data-error]::after {
   width: 3px;
   background-color: #fff;
 }
-.close:before {
+.close:before,.close-modal-submit:before {
   transform: rotate(45deg);
 }
-.close:after {
+.close:after,.close-modal-submit:after {
   transform: rotate(-45deg);
 }
 .btn-submit,
@@ -464,7 +461,7 @@ input[data-error]::after {
 }
 .btn-signup {
   outline: none;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   font-size: 1.3rem;
   padding: 15px 23px;
   margin: 0;

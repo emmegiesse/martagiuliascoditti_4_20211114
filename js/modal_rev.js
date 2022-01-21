@@ -98,7 +98,7 @@ function checkBirthdate() {
 // Events check 
 function checkEvents() {
   let errorEvents = document.getElementById("error-events");
-  if (events.trim().length === 0 || isNaN(events.trim()) === true || events.trim() < 0){
+  if (events.value.trim().length === 0 || isNaN(events.value.trim()) === true || events.value.trim() < 0){
     errorEvents.innerHTML = "Vous devez entrer votre date de naissance";
     return false;
   } else {
