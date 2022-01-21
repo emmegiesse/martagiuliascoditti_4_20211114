@@ -151,7 +151,6 @@ main {
 }
 
 /* Modal form */
-
 .button {
   background: #fe142f;
   margin-top: 0.5em;
@@ -238,6 +237,11 @@ input {
 }
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
+}
+
+.error {
+  font-size: 0.8em;
+  color: red;
 }
 /* 
 input[data-error]::after {
@@ -335,7 +339,8 @@ input[data-error]::after {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup,
+#close-btn-confirmation {
   background: #fe142f;
   display: block;
   margin: 0 auto;
@@ -359,6 +364,13 @@ input[data-error]::after {
 }
 .select-selected {
   background-color: #fff;
+}
+
+.submitted-form {
+  height: 80%;
+  display :flex;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
 /* Style the arrow inside the select element: */
