@@ -549,10 +549,9 @@ footer {
     white-space: normal;
   }
   .hero-text {
-    width: unset;
+    width: 200px;
     font-size: 0.9rem;
     margin-top:20px;
-    overflow: wrap;
   }
   .hero-img img {
     border-radius: 10px;
