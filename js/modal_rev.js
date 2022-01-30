@@ -99,7 +99,7 @@ function checkBirthdate() {
 function checkEvents() {
   let errorEvents = document.getElementById("error-events");
   if (events.value.trim().length === 0 || isNaN(events.value.trim()) === true || events.value.trim() < 0){
-    errorEvents.innerHTML = "Vous devez entrer votre date de naissance";
+    errorEvents.innerHTML = "Vous devez entrer une valeur numerique";
     return false;
   } else {
     errorEvents.innerHTML = "";
